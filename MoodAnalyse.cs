@@ -8,7 +8,18 @@ namespace MoodAnalayzer
 {
     public class MoodAnalyse
     {
-        public string AnalyseMood(string message)
+        private string message;
+
+        /// <summary>
+        /// Parameterised Constructor.
+        /// </summary>
+        /// <param name="message"></param>
+        public MoodAnalyse(string message)
+        {
+            this.message = message;
+        }
+
+        public string AnalyseMood()
         {
             if (message.Contains("Sad"))
             {
